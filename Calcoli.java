@@ -143,5 +143,60 @@ public class Calcoli {
     }
 
 
+    public void stampaNumeri(){
+        for(int i =1; i<=20; i++){
+            System.out.println(i);
+        }
+    }
+
+    public void sommaPrimiNumeri(){
+        System.out.println("inserisci numero:");
+        int numero = scanner.nextInt();
+
+        for(int i=0; i<=numero; i++){
+        
+            int somma =+ i;
+            if(numero==i){
+                System.out.println(somma);
+            }
+        }
+        
+    }
+
+    public void tabellina(){
+        System.out.println("inserisci numero:");
+        int numero = scanner.nextInt();
+
+        for(int i=0; i<=10; i++){
+        
+            int risultato = numero*i;
+            
+                System.out.println(risultato);
+            
+        }
+        
+    }
+
+
+    public void fattoriale(){
+        System.out.println("inserisci numero:");
+        int numero = scanner.nextInt();
+        int calcolo = 1;
+        for(int i = 1; i <= numero; i++){
+           calcolo*=i;
+        }
+        System.out.println(calcolo);
+
+    }
+
+
+    public void contoAllaRovescia(){
+        for(int i = 10; i >= 0; i--){
+            System.out.println(i);
+            if(i==0){
+                System.out.println("buon anno!");
+            }
+        }
+    }
 
 }
